@@ -159,9 +159,7 @@ public class App {
     }
 
 }
-
-Ok sir
-[3:48 PM] Arun Kumar Sinha (Unverified)
+-----------------------------------------------------------------------------------------
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -273,9 +271,9 @@ public class App {
     }
 
 }
-
+------------------------------------------------------------------------------
 import java.util.Scanner;
-public class Yash
+public class sai
 {
     public static void main(String []args)
     {
