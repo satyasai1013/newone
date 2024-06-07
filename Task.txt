@@ -1,0 +1,293 @@
+Task:
+-------
+	Open cloud lab
+	go to cmd in any location
+	check java version
+		java -version
+		(or)
+		java --version
+ [10:37 AM] Jagadeeswaran R (Unverified)
+public class App
+{
+ 
+    public static void main(String []args)
+    {
+        int i=20;//check what is the maximum value allowed in this variable
+        //try different data type of variables
+        System.out.println(i);
+    }
+}
+---------------------------------------------------
+
+//start coding a new program
+public class sai
+{
+    public static void main(String []args){
+        int i =20;
+        char s='f';
+        float j=0.234f;
+        double h=3.56;
+        boolean b=true;
+        short g=43;
+        long u=4593855;
+        System.out.println(i);
+        System.out.println(s);
+        System.out.println(j);
+        System.out.println(h);
+        System.out.println(b);
+        System.out.println(g);
+        System.out.println(u);
+
+    }
+}20
+f
+0.234
+3.56
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+ 
+import java.util.Date;
+import java.util.Arrays;
+public class App
+{
+    public static void main(String []args)
+    {
+       String s1="School Master";
+       String s2="Class room";
+       s1=s1.replace(""," ");
+       s2=s2.replace(""," ");
+       char [] a1=s1.toCharArray();
+       char [] a2=s2.toCharArray();
+       Arrays.sort(a1);
+       Arrays.sort(a2);
+       if(Arrays.equals(a1,a2))
+       {
+           System.out.println("They are ANAGRAMS");
+       }
+       else
+       {
+           System.out.println("They are not ANAGRAMS");
+       }
+    }
+}
+--------------------------------------------------
+//start coding a new program
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class App
+{
+    public static void main(String []args)
+    {
+        Scanner sc=new Scanner(System.in);
+        String str1=sc.nextLine();
+        String str2=sc.nextLine();
+        //how to find if both str1 and str2 are anagrams?
+        //convert them into char array sort them and check if they are same
+        char arr1[]=str1.toCharArray();
+        char arr2[]=str2.toCharArray();
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
+ 
+        str1=new String(arr1);
+        str2=new String(arr2);
+ 
+        if(str1.equalsIgnoreCase(str2))
+        {
+            System.out.println("Anagrams");
+        }else
+        {
+            System.out.println("Not anagrams");
+        }
+    }
+}
+
+
+--------------------------------------------------
+//start coding a new program
+import java.util.Date;
+public class App
+{
+    public static void main(String []args)
+    {
+        String str="malayalam";
+        StringBuilder sb=new StringBuilder(str);
+        sb.reverse();
+        String reverseStr=sb.toString();
+        if(str.equals(reverseStr))
+            System.out.println("Palidrome");
+        else
+            System.out.println("Not Palindrome");
+    }
+}
+---------------------------------------------
+Task:
+
+	convert a String into char array
+
+	sort the array using Arrays.sort method
+ 
+Application of this technique in following task:
+ 
+Accept 2 input strings and check if they are anagrams.
+ 
+Anagrams are words which are made using same set of letters.	
+
+public class App {
+
+    public static void main(String[] args) {
+
+        String a = "kjfsdhkj";
+
+        char arr[] = a.toCharArray();
+
+        Arrays.sort(arr);
+
+        for(char i:arr){
+
+        System.out.println(i);
+
+        }
+
+    }
+
+}
+
+Ok sir
+[3:48 PM] Arun Kumar Sinha (Unverified)
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        String s1 = sc.nextLine();
+
+        String s2 = sc.nextLine();
+
+        char arr1[] = s1.toCharArray();
+
+        char arr2[] = s2.toCharArray();
+
+        Arrays.sort(arr1);
+
+        Arrays.sort(arr2);
+
+        String String1 = new String(arr1);
+
+        String String2 = new String(arr2);
+ 
+        if (String1.equals(String2)) {
+
+          System.out.println("true");
+
+        }
+
+        else{
+
+            System.out.println("false");
+
+        }
+ like 2
+
+import java.util.Scanner;
+public class P1
+{
+    public static void main(String[]args)
+    {
+        Scanner sc= new Scanner(System.in);
+        String a=sc.nextLine();
+        StringBuilder sb=new StringBuilder(a);
+        System.out.println(sb.reverse());
+    }
+}
+
+
+import java.util.Scanner;
+public class P1
+{
+    public static void main(String[]args)
+    {
+        Scanner sc= new Scanner(System.in);
+        String a=sc.nextLine();
+        StringBuilder sb=new StringBuilder(a);
+        System.out.println(sb.reverse());
+    }
+}
+
+true
+43
+4593855
+
+
+-------------------------------------------------
+
+.append();
+
+.insert();
+
+.setCharAt();
+
+.delet();
+
+.deletCharAt();
+
+.replace();
+
+.revers();
+
+.indexOf();
+
+.subString();
+
+.lastIndexOf();
+
+.capacity();
+
+.length();---To find the length
+
+.ensureCapacity();---explicitly add capacity to new one
+
+
+
+Accept a String input from the user and print the reverse of the String
+
+
+public class App {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        String a = sc.nextLine();
+
+        StringBuilder sb = new StringBuilder(a);
+ 
+        System.out.println(sb.reverse().toString());
+
+    }
+
+}
+
+import java.util.Scanner;
+public class Yash
+{
+    public static void main(String []args)
+    {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        StringBuilder s1 = new StringBuilder(str);
+ 
+        StringBuilder s2 = s1.reverse();
+ 
+        System.out.println("Reverse String : "+ s2.toString());
+ 
+       
+    }
+}
+ 
